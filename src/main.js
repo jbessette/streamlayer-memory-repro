@@ -32,6 +32,9 @@ const layer = new StreamLayer({
     timeInfo: {
         trackIdField: "TRACKID",
     },
+    purgeOptions: {
+      maxObservations: 1
+    },
     updateInterval: 100,
     geometryType: "polygon", // required property
     spatialReference: {
