@@ -3,7 +3,10 @@
 A small sample to reproduce memory growth and eventual map crash when using StreamLayers in 4.29. This has been reproduced on two separate PCs with similar, though not identical, hardware. The memory growth is not reproducable using 4.27 or 4.28. I have not tested versions earlier than 4.27.
 
 ### Steps to reproduce
-- Load page in Chrome, Edge, or Firefox (have not tested other browsers, slower to occur in Firefox)
+- Clone repo
+- `npm i` to install
+- `npm run dev` to launch vite
+- Load `http://localhost:5173` in Chrome, Edge, or Firefox (have not tested other browsers, slower to occur in Firefox)
 - Open the browser task manager from the tab bar
 - Monitor memory usage of the app tab, it will grow continuously to ~16GB, at which point the map will crash
 
