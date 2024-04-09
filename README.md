@@ -10,6 +10,12 @@ A small sample to reproduce memory growth and eventual map crash when using Stre
 - Open the browser task manager from the tab bar
 - Monitor memory usage of the app tab, it will grow continuously to ~16GB, at which point the map will crash
 
+### Steps to compare to earlier versions
+- Stop vite if running
+- `npm i @arcgis/core@4.28.0` to install 4.28
+- `npm run dev` to launch vite
+- Load `http://localhost:5173` in browser
+
 ### System Stats
 - Windows 11
 - 32GB RAM
