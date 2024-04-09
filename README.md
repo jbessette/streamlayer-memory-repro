@@ -1,9 +1,9 @@
 # StreamLayer Memory Reproduction
 
-A small sample to reproduce memory growth and eventual map crash when using StreamLayers in 4.29.
+A small sample to reproduce memory growth and eventual map crash when using StreamLayers in 4.29. This has been reproduced on two separate PCs with similar, though not identical, hardware.
 
 ### Steps to reproduce
-- Load page in Chrome or Edge (Firefox does not exhibit the same behavior)
+- Load page in Chrome, Edge, or Firefox (have not tested other browsers, slower to occur in Firefox)
 - Open the browser task manager from the tab bar
 - Monitor memory usage of the app tab, it will grow continuously to ~16GB, at which point the map will crash
 
@@ -11,7 +11,8 @@ A small sample to reproduce memory growth and eventual map crash when using Stre
 - Windows 11
 - 32GB RAM
 - Intel integrated GPU and nVidia RTX 2080 (Tested with both, same results)
-- Chrome / Edge 123
+- Chrome / Edge version 123 (with or without extensions loaded)
+- Firefox version 124
 
 ### Screenshots
 While the app is running, the memory usage of the tab grows over time. In my testing it takes several hours to reach thex 16GB max.
