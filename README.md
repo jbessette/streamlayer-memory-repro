@@ -1,6 +1,6 @@
 # StreamLayer Memory Reproduction
 
-A small sample to reproduce memory growth and eventual map crash when using StreamLayers in 4.29. This has been reproduced on two separate PCs with similar, though not identical, hardware.
+A small sample to reproduce memory growth and eventual map crash when using StreamLayers in 4.29. This has been reproduced on two separate PCs with similar, though not identical, hardware. The memory growth is not reproducable using 4.27 or 4.28. I have not tested versions earlier than 4.27.
 
 ### Steps to reproduce
 - Load page in Chrome, Edge, or Firefox (have not tested other browsers, slower to occur in Firefox)
